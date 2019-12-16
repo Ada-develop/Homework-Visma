@@ -1,0 +1,141 @@
+/* CSS reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body background */
+
+body {
+    background: rgb(242, 242, 242);
+    background: linear-gradient(180deg, rgba(242, 242, 242, 1) 0%, rgba(190, 189, 191, 1) 49%);
+}
+
+/* Grid system */
+
+#page {
+    display: grid;
+    width: 90%;
+    height: 600px;
+    grid-template-areas:
+        "nav main main main main"
+        "nav main main main main"
+        "nav main main main main";
+    grid-template-rows: 100px 250px 250px;
+    grid-template-columns: 248px 248px 248px;
+    margin: 0 auto;
+}
+
+main {
+    grid-area: main;
+}
+
+nav {
+    grid-area: nav;
+    overflow: scroll;
+    border-left: solid 1px #F5F5F5;
+}
+
+/* Header */
+header {
+    background: black;
+    overflow: hidden;
+
+}
+
+h1 {
+    color: aliceblue;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+/* Spacing between icon and header */
+
+header i {
+    margin-top: 15px;
+}
+
+/* Preview image area modification */
+
+nav img {
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+/* Hovers */
+
+a:hover {
+    opacity: 0.7;
+}
+
+nav img:hover{
+    opacity: 0.7;
+}
+
+/* Scroll bar */
+
+nav::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+nav::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+/* Expanded image modification */
+
+#expandedImg {
+    margin: 50px;
+    border-radius: 25px;
+    height: 450px;
+    width: 750px;
+    position: static;
+    border: none;
+}
+
+/* Link decoration reset */
+
+a {
+    text-decoration: none;
+    margin: 0;
+    color: aliceblue;
+}
+
+/* Footer background */
+
+footer {
+    background: black;
+}
+
+
+/* Footer social links */
+
+footer i {
+    color: white;
+    font-size: 40px;
+}
+
+
+footer p {
+    text-align: center;
+    color: white;
+    letter-spacing: 15px;
+    padding: 10px;
+}
+
+/* Copy right */
+
+footer p:last-child{
+    font-size: 12px;
+    letter-spacing: 0px;   
+}
